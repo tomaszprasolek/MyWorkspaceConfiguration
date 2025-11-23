@@ -45,4 +45,5 @@ My workspace configuration description and instructions how to do it
       - Settings (`CTRL + ,`) > Defaults > Starting directory
      
   ## TODO
+  [ ] Add settings file for Sublime (get it from work account)
   [ ] Add instruction how to configure git email per workspace. Different for personal stuff, different for work
