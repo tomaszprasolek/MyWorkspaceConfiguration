@@ -5,7 +5,8 @@ My workspace configuration description and instructions how to do it
 - **Sublime Text** - [https://www.sublimetext.com](https://www.sublimetext.com)
   - Package: **JSON Pretty** (In Sublime: CTRL + SHIFT + P >> Package Control: Install Package >> Pretty JSON)
 - **Auto Hot Key** - [https://www.autohotkey.com](https://www.autohotkey.com)
-  - Script: [git_script.ahk](https://gist.github.com/tomaszprasolek/d742cc607666bd635a5226a008fd3d84) **TODO: get script from my work account**
+  - Script: [git_script.ahk](https://gist.github.com/tomaszprasolek/d742cc607666bd635a5226a008fd3d84)
+  - Put the script in the location: `C:\Users\{userName}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
 - Windows Terminal Configuration (PowerShell)
   - **Oh My Posh**: [https://ohmyposh.dev/docs/installation/windows](https://ohmyposh.dev/docs/installation/windows)
     - `winget install JanDeDobbeleer.OhMyPosh --source winget`
@@ -42,3 +43,6 @@ My workspace configuration description and instructions how to do it
     - Settings (`CTRL + ,`) > Startup > Launch Parameters > Launch Mode > Maximized
     - Set default folder if needed
       - Settings (`CTRL + ,`) > Defaults > Starting directory
+     
+  ## TODO
+  [ ] Add instruction how to configure git email per workspace. Different for personal stuff, different for work
