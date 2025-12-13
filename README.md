@@ -49,5 +49,6 @@ My workspace configuration description and instructions how to do it
      
   ## TODO
   - [ ] Add settings file for Sublime (get it from work account)
-  - [ ] Add git config file with aliases
+  - [X] Add git config file with aliases
   - [ ] Add instruction how to configure git email per workspace. Different for personal stuff, different for work
+  - [ ] Add to Powershell profile alias for superfile (CLI to file management)
