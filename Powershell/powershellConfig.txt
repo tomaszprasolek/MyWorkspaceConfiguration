@@ -1,0 +1,8 @@
+Set-PSReadLineOption -PredictionViewStyle ListView -PredictionSource History -HistoryNoDuplicates
+Import-Module -Name Terminal-Icons
+Import-Module posh-git
+
+oh-my-posh init pwsh --config 'C:\Users\Tomasz.Prasolek\AppData\Local\Programs\oh-my-posh\themes\illusi0n.omp.json' | Invoke-Expression
+$env:POSH_GIT_ENABLED = $true
+
+New-Alias sbl "C:\Program Files\Sublime Text\sublime_text.exe"
