@@ -2,13 +2,13 @@
 My workspace configuration description and instructions how to do it
 
 - **Git for Windows** - [https://gitforwindows.org](https://gitforwindows.org)
-  - Put config file: [.gitconfig](https://github.com/tomaszprasolek/MyWorkspaceConfiguration/blob/master/Git/.gitconfig) in path `C:\Users\{userName}\`
+  - Put config file: [.gitconfig](Git/.gitconfig) in path `C:\Users\{userName}\`
     - Set in the file the proper name, surname and email address
     - Check if Sublime Path is correct in `core.editor`
 - **Sublime Text** - [https://www.sublimetext.com](https://www.sublimetext.com)
   - Package: **JSON Pretty** (In Sublime: CTRL + SHIFT + P >> Package Control: Install Package >> Pretty JSON)
 - **Auto Hot Key** - [https://www.autohotkey.com](https://www.autohotkey.com)
-  - Script: [git_script.ahk](https://gist.github.com/tomaszprasolek/d742cc607666bd635a5226a008fd3d84)
+  - Script: [git_script.ahk](AutoHotKey/git_script.ahk)
   - Put the script in the location: `C:\Users\{userName}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
 - Windows Terminal Configuration (PowerShell)
   - **Oh My Posh**: [https://ohmyposh.dev/docs/installation/windows](https://ohmyposh.dev/docs/installation/windows)
