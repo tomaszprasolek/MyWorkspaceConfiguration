@@ -41,7 +41,7 @@ My workspace configuration description and instructions how to do it
     - Copy to file content from here: [Powershell config](Powershell/powershellConfig.txt)
       - Change user name in path `C:\Users\Tomasz.Prasolek\...`
       - Check if Sublime path is correct
-      - Create file `illusi0n.omp.json` on disk and ipdate path to this file. Copy content from here: [illusi0n.omp.json](https://gist.github.com/tomaszprasolek/c4535f31644f8a492af1785e0197d84f)
+      - Create file `illusi0n.omp.json` on disk and ipdate path to this file. Copy content from here: [illusi0n.omp.json](OhMyPosh/illusi0n.omp.json)
     - **Restart the terminal**, close and open it again
     - Settings (`CTRL + ,`) > Startup > Launch Parameters > Launch Mode > Maximized
     - Set default folder if needed
