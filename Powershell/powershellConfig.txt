@@ -6,3 +6,4 @@ oh-my-posh init pwsh --config 'C:\Users\Tomasz.Prasolek\AppData\Local\Programs\o
 $env:POSH_GIT_ENABLED = $true
 
 New-Alias sbl "C:\Program Files\Sublime Text\sublime_text.exe"
+New-Alias k "kubectl"
