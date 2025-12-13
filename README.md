@@ -2,6 +2,9 @@
 My workspace configuration description and instructions how to do it
 
 - **Git for Windows** - [https://gitforwindows.org](https://gitforwindows.org)
+  - Put config file: [.gitconfig](https://github.com/tomaszprasolek/MyWorkspaceConfiguration/blob/master/Git/.gitconfig) in path `C:\Users\{userName}\`
+    - Set in the file the proper name, surname and email address
+    - Check if Sublime Path is correct in `core.editor`
 - **Sublime Text** - [https://www.sublimetext.com](https://www.sublimetext.com)
   - Package: **JSON Pretty** (In Sublime: CTRL + SHIFT + P >> Package Control: Install Package >> Pretty JSON)
 - **Auto Hot Key** - [https://www.autohotkey.com](https://www.autohotkey.com)
