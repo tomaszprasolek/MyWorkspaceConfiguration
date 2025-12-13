@@ -1,0 +1,33 @@
+# This is Git's per-user configuration file.
+[user]
+	name = <Name and surmage>
+	email = <Email address>
+#[includeif "gitdir:D:\_CSHARK\ASAI\Repos"]
+#	path = .gitconfig.work
+[core]
+	autocrlf = true
+	#excludesfile = C:\\Users\\tpraso\\Documents\\gitignore_global.txt
+  editor = "'C:\\Program Files\\Sublime Text\\sublime_text.exe' -w -n"
+[alias]
+	lg = log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(yellow)<%an>%Creset' --date=human
+	lgg = log -15 --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(yellow)<%an>%Creset' --date=human
+	st = status
+	co = checkout
+	ca = commit --amend
+	cane = commit --amend --no-edit
+	aca = !git add -A && git commit --amend
+	pr = "!f() { exec vsts code pr \"$@\"; }; f"
+	repo = "!f() { exec vsts code repo \"$@\"; }; f"
+	ignored = "!git ls-files -v | grep \"^[[:lower:]]\""
+	com = !git add -A && git commit
+	open = "!f() { REPO_URL=$(git config remote.origin.url); explorer ${REPO_URL%%.git}; }; f"
+  browse = !git open
+[fetch]
+	prune = true
+[pull]
+	rebase = true
+[difftool]
+	prompt = false
+[push]
+	followTags = true
+	autoSetupRemote = true
