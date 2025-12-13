@@ -1,0 +1,100 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "console_title_template": "{{.Folder}}{{if .Root}} :: root{{end}}",
+    "blocks":
+    [
+        {
+            "segments":
+            [
+                {
+                    "type": "kubectl",
+                    "style": "powerline",
+                    "foreground": "#a8a5a5",
+                    "template": "[{{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}] ",
+                    "properties":
+                    {
+                        "context_aliases":
+                        {
+                            "arn:aws:eks:eu-west-1:1234567890:cluster/posh": "posh"
+                        }
+                    }
+                },
+                {
+                    "foreground": "#767676",
+                    "style": "diamond",
+                    "template": "{{ round .PhysicalPercentUsed .Precision }}% ",
+                    "type": "sysinfo"
+                },
+                {
+                    "foreground": "#767676",
+                    "style": "diamond",
+                    "template": "{{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB ",
+                    "type": "sysinfo"
+                },
+                {
+                    "type": "battery",
+                    "style": "powerline",
+                    "foreground": "#767676",
+                    "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}%",
+                    "properties":
+                    {
+                        "discharging_icon": " ",
+                        "charging_icon": " ",
+                        "charged_icon": " "
+                    }
+                }
+            ],
+            "type": "rprompt"
+        },
+        {
+            "alignment": "left",
+            "segments":
+            [
+                {
+                    "type": "text",
+                    "style": "plain",
+                    "foreground": "#ff8800",
+                    "template": "$"
+                },
+                {
+                    "foreground": "#62c0ff",
+                    "properties":
+                    {
+                        "folder_separator_icon": "/",
+                        "style": "folder"
+                    },
+                    "style": "plain",
+                    "type": "path"
+                },
+                {
+                    "foreground": "#62c0ff",
+                    "foreground_templates":
+                    [
+                        "{{ if or (.Working.Changed) (.Staging.Changed) }}#6287ff{{ end }}",
+                        "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#7f62ff{{ end }}",
+                        "{{ if gt .Ahead 0 }}#caadff{{ end }}",
+                        "{{ if gt .Behind 0 }}#c062ff{{ end }}"
+                    ],
+                    "properties":
+                    {
+                        "branch_max_length": 25,
+                        "fetch_stash_count": true,
+                        "fetch_status": true,
+                        "fetch_upstream_icon": true
+                    },
+                    "style": "plain",
+                    "template": "<#ff8800>|</> {{.UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} ",
+                    "type": "git"
+                },
+                {
+                    "foreground": "#ff8800",
+                    "style": "plain",
+                    "template": "❯ ",
+                    "type": "text"
+                }
+            ],
+            "type": "prompt"
+        }
+    ],
+    "version": 2
+}
