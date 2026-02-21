@@ -7,6 +7,23 @@ My workspace configuration description and instructions how to do it
     - Check if Sublime Path is correct in `core.editor`
 - **Sublime Text** - [https://www.sublimetext.com](https://www.sublimetext.com)
   - Package: **JSON Pretty** (In Sublime: CTRL + SHIFT + P >> Package Control: Install Package >> Pretty JSON)
+  - User settings (Menu >> Preferences >> Settings)
+    ```
+    {
+        "font_size": 14,
+        "hot_exit": true,
+        "ignored_packages":
+        [
+            "Vintage"
+        ],
+        "close_windows_when_empty": true,
+        "theme": "Default.sublime-theme",
+        "index_files": true,
+        "dark_theme": "Default.sublime-theme",
+        "light_theme": "Adaptive.sublime-theme",
+        "color_scheme": "Monokai.sublime-color-scheme"
+    }
+    ```
 - **Auto Hot Key** - [https://www.autohotkey.com](https://www.autohotkey.com)
   - Script: [git_script.ahk](AutoHotKey/git_script.ahk)
   - Put the script in the location: `C:\Users\{userName}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
@@ -48,7 +65,7 @@ My workspace configuration description and instructions how to do it
       - Settings (`CTRL + ,`) > Defaults > Starting directory
      
   ## TODO
-  - [ ] Add settings file for Sublime (get it from work account)
+  - [X] Add settings file for Sublime (get it from work account)
   - [X] Add git config file with aliases
   - [ ] Add instruction how to configure git email per workspace. Different for personal stuff, different for work
   - [ ] Add to Powershell profile alias for superfile (CLI to file management)
